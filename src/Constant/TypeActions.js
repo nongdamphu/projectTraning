@@ -1,0 +1,6 @@
+export const FETCH_PRODUCTS = 'FETCH_PRODUCTS'
+export const ADD_LIST = 'ADD_LIST'
+export const ON_SUBMIT = 'ON_SUBMIT'
+export const ON_EDIT = 'ON_EDIT'
+export const ON_DELETE = 'ON_DELETE'
+export const GET_EDIT = 'GET_EDIT'
