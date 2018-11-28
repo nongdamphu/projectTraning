@@ -21,16 +21,6 @@ const MenuLink = ({ label, to, activeOnlyWhenExact }) => {
 
 const menuList = [
     {
-        label: "LOGO",
-        to: "/",
-        exact: true
-    },
-    {
-        label: "Trang Chủ",
-        to: "/home",
-        exact: false
-    },
-    {
         label: "Quản Lí Sản Phẩm",
         to: "/product-list",
         exact: false
@@ -43,6 +33,7 @@ class Menu extends Component {
             <div className="mb-5">
                 <nav className="navbar navbar-expand navbar-light bg-light">
                     <ul className="nav navbar-nav">
+                        <a href="/" className="nav-link">LOGO</a>
                         {this.showMenu(menuList)}
                     </ul>
                 </nav>

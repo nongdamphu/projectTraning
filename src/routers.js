@@ -6,7 +6,7 @@ import ProductActionPage from './pages/ProductActionPage/ProductActionPage';
 
 const routers = [
     {
-        path: '/home',
+        path: '/',
         exact: true,
         main: () => <Home />
     },

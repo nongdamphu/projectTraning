@@ -49,6 +49,8 @@ export function register(config) {
         registerValidSW(swUrl, config);
       }
     });
+  } else{
+    console.log("wont register sw", process.env.NODE_ENV)
   }
 }
 
@@ -56,6 +58,9 @@ function registerValidSW(swUrl, config) {
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
+
+      console.log("this is register")
+
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
         installingWorker.onstatechange = () => {
